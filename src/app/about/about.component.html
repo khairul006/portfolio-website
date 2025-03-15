@@ -1,10 +1,35 @@
 <!-- src/app/about/about.component.html -->
-<section id="about" class="py-32 bg-white">
-    <h2 class="text-3xl font-bold text-gray-800 text-center">About Me</h2>
-    <div class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto text-center">
-        <p>I want to be the one that know all the thing. From frontend to the backend.</p>
-        <p>From local to the cloud. From architecture to the security. But to be realistic, I dream</p>
-        <p>to be a <a class="underline decoration-sky-500/30">cybersecurity expert</a> and of course you must know how the cyber works.</p>
-        <p>A big goal and here I am starting my journey with <a class="underline decoration-sky-500/30">software development.</a></p>
-    </div>  
+<section id="about" class="bg-gray-100 py-16 px-6 flex flex-col lg:flex-row items-center">
+    <div class="max-w-3xl lg:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+        <p class="text-lg text-gray-700">
+            I am a <strong>Computer Science graduate</strong> with a specialization in <strong>Computer Networking</strong>. 
+            With hands-on experience in the financial industry as a <strong>Tech Risk Management intern</strong> and over 
+            <strong>3 years as a backend developer</strong> in the highway industry, I’ve developed a deep understanding 
+            of building secure, scalable systems. 
+        </p>
+        <p class="text-lg text-gray-700 mt-4">
+            I work with <strong>NestJS</strong>, <strong>C# .NET</strong>, and have extensive experience with databases 
+            like <strong>Oracle</strong>, <strong>PostgreSQL</strong>, and <strong>MSSQL</strong>. I'm also skilled in 
+            <strong>Azure App Service</strong>, enabling seamless cloud integration. Passionate about solving complex 
+            technical challenges, I’m always looking to learn and grow in the tech field.
+        </p>
+    </div> 
+
+    <!-- Right Side: Rotating Image Carousel -->
+<div class="lg:w-1/2 flex justify-center mt-12 lg:mt-0">
+    <div class="relative w-64 h-64">
+        <!-- Rotating container -->
+        <div class="absolute inset-0 animate-spin-slow">
+            <img src="assets/images/nestjs.png" class="w-16 absolute top-0 left-1/2 transform -translate-x-1/2">
+            <img src="assets/images/csharp.png" class="w-16 absolute bottom-0 left-1/2 transform -translate-x-1/2">
+            <img src="assets/images/azure.png" class="w-16 absolute left-0 top-1/2 transform -translate-y-1/2">
+            <img src="assets/images/oracle.png" class="w-16 absolute right-0 top-1/2 transform -translate-y-1/2">
+            <img src="assets/images/postgres.png" class="w-16 absolute top-1/4 left-1/4">
+            <img src="assets/images/mssql.png" class="w-16 absolute bottom-1/4 right-1/4">
+        </div>
+    </div>
+</div>
+
+
 </section>
