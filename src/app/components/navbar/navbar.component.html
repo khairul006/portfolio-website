@@ -1,0 +1,32 @@
+<header class="bg-black shadow-md fixed w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-gray-100">MyPortfolio</div>
+  
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a *ngFor="let link of navLinks" [href]="'#' + link.id" class="nav-link">
+            {{ link.label }}
+          </a>
+        </nav>
+  
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-100 focus:outline-none" (click)="toggleMenu()">
+          ☰
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Navigation -->
+    <nav *ngIf="menuOpen" class="md:hidden bg-white shadow-md absolute w-full left-0">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li *ngFor="let link of navLinks">
+          <a [href]="'#' + link.id" class="nav-link" (click)="toggleMenu()">
+            {{ link.label }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
