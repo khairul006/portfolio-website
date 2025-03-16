@@ -5,8 +5,14 @@ module.exports = {
   ],
   theme: {
       extend: {
+        keyframes: {
+          circle: {
+            '0%': { transform: 'rotate(0deg) translateY(-100px) rotate(0deg)' },
+            '100%': { transform: 'rotate(360deg) translateY(-100px) rotate(-360deg)' }
+          }
+        },
         animation: {
-          'spin-slow': 'spin 1ms linear infinite', // Slower rotation
+          'orbit': 'circle 10s linear infinite',
         }
       },
   },

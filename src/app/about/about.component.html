@@ -16,20 +16,20 @@
         </p>
     </div> 
 
-    <!-- Right Side: Rotating Image Carousel -->
-<div class="lg:w-1/2 flex justify-center mt-12 lg:mt-0">
-    <div class="relative w-64 h-64">
-        <!-- Rotating container -->
-        <div class="absolute inset-0 animate-spin-slow">
-            <img src="assets/images/nestjs.png" class="w-16 absolute top-0 left-1/2 transform -translate-x-1/2">
-            <img src="assets/images/csharp.png" class="w-16 absolute bottom-0 left-1/2 transform -translate-x-1/2">
-            <img src="assets/images/azure.png" class="w-16 absolute left-0 top-1/2 transform -translate-y-1/2">
-            <img src="assets/images/oracle.png" class="w-16 absolute right-0 top-1/2 transform -translate-y-1/2">
-            <img src="assets/images/postgres.png" class="w-16 absolute top-1/4 left-1/4">
-            <img src="assets/images/mssql.png" class="w-16 absolute bottom-1/4 right-1/4">
+    <div class="lg:w-1/2 flex justify-center items-center mt-12 lg:mt-0">
+        <div class="relative w-64 h-64 flex items-center justify-center">
+            <!-- Rotating container -->
+            <div class="absolute w-full h-full animate-spin-slow flex items-center justify-center">
+                <!-- Centered rotating images -->
+                <img src="assets/images/nestjs.png" class="w-16 lg:w-18 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit">
+                <img src="assets/images/csharp.png" class="w-14 lg:w-18 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit" style="animation-delay: 1.5s;">
+                <img src="assets/images/azure.png" class="w-14 lg:w-18 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit" style="animation-delay: 3s;">
+                <img src="assets/images/oracle.png" class="w-16 lg:w-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit" style="animation-delay: 4.5s;">
+                <img src="assets/images/postgres.png" class="w-16 lg:w-24 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit" style="animation-delay: 6s;">
+                <img src="assets/images/mssql.png" class="w-18 lg:w-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-orbit" style="animation-delay: 7.5s;">
+            </div>
         </div>
     </div>
-</div>
-
+    
 
 </section>
